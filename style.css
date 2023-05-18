@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Open+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto+Slab:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Opens Sans', sans-serif;
+    font-weight: 400;
+    background-color: rgb(20, 20, 20);
+}
+
+
+.container .linehr {
+    margin: 50px;
+    opacity: 0.3;
+}
+
+    /* Barra do Topo */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+    z-index: 2;
+    padding: 20px;
+}
+
+.nav-bar .nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar .nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar .nav-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar .nav-list li {
+    padding-right: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav-bar .navbutton {
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    position: absolute;
+    display: none;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+}
+
+    /* Banner */
+
+.container .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.container .banner .desktop-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+}
+
+    /* Banner - Apresentção */
+
+.banner .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    /* Apresentação - Título */
+
+.banner .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: Aliceblue;
+}
+
+.banner .content h1 .name {
+    font-size: 50px;
+    padding-left: 5px;
+    color: rgb(102, 199, 255);
+}
+
+    /* Apresentação - subtítulo */
+
+.banner .content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: auto;
+    color: Aliceblue;
+}
+
+.container .banner .content hr {
+    margin: 10px;
+}
+    /* Apresentação - slogan */
+
+.banner .content .slogan {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+    /* Biografia */
+
+.bio .content {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 50px;
+    color: aliceblue;
+    background-color: rgb(24, 23, 23);
+}
+
+.bio .content .text {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.bio .content h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.bio .content p {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.bio .content h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.bio .content img {
+    height: 500px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+    /* "Como eu trabalho" */
+ 
+.container .work .content {
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.work .tittle {
+    text-align: center;
+}
+
+.container .work h2{
+    display: inline;
+    border-bottom: 3px solid aliceblue;
+    font-family: 'Playfair Display', sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.container .work .content h3 {
+    margin: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.container .work .content h4 {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.container .work .content li {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.container .work .content p {
+    margin: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+    /* Cards */
+
+.content .cards {
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.content .cards .list {
+    margin-left: 100px;
+}
+
+.content .cards img {
+    width: 500px;
+}
+
+.content .card_1 {
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 0.5px 0.5px 0.5px yellow;
+}
+
+.content .card_2 {
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 0.5px 0.5px 0.5px yellow;
+}
+
+.content .card_3 {
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    font-size: 10px;
+    box-shadow: 1px 0.5px 0.5px 0.5px yellow;
+}
+
+.content .card_4 {
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 1px 0.5px 0.5px 0.5px yellow;
+}
+
+    /* Portfólio */
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h2 {
+    display: inline;
+    font-family: 'Playfair Display', sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+    padding: 10px;
+    border-bottom: 3px solid aliceblue;
+}
+
+.portfolio .content {
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+    
+}
+
+.portfolio .content .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.portfolio .menu button {
+    width: 180px;
+    height: 60px;
+    margin: 10px;
+    border-color: yellow;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.portfolio .menu button:hover {
+    background-color: yellow;
+    font-weight: 400;
+    color: black;
+}
+
+.portfolio .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.portfolio .images .line {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.portfolio .images .line img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+    /* Contato */
+
+.contacts .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.contacts .content {
+    text-align: center;
+}
+
+.contacts .content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.contacts .content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.contacts .content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+.contacts .content .menu {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contacts .menu .text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacts .content .menu button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(43, 42, 42);
+    box-shadow: 1px 1px 1px 1px yellow;
+    color: white;
+    width: 300px;
+    height: 400px;
+}
+
+
+.contacts .content .menu button img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.contacts .content .menu h3 {
+    font-size: 20px;
+}
+
+.contacts .content .slogan {
+    font-family: 'PlayFair Dislay', serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contacts .slogan b {
+    color: yellow;
+}
+
+/* Whatsapp */
+
+.menu .whatsapp .zap-image {
+    background-color: #25D366;
+    padding: 3px;
+}
+
+.menu .whatsapp a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Instagram */
+
+.menu .instagram .insta-image {
+    background-color: #FF007F;
+    padding: 3px;
+}
+
+.menu .instagram a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #FFA500, #993399, #FF007F);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Email */
+
+.menu .email .email-image {
+    background-color: #0BFF;
+    padding: 3px; 
+}
+
+.menu .email a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0BFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 18px;
+    font-size: 18px;
+    color: white;
+}
+
+.menu .email p {
+    font-size: 13px;
+}
+
+    /* Rodapé */
+
+.container .footer {
+    background-color: black;
+    padding: 20px;
+}
+
+    /* Responsividade */
+
+@media screen and (min-width: 300px) and (max-width: 920px) {
+
+    .nav-bar {
+        display: none;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    /* Banner */
+
+    .container .banner {
+        height: 300px; 
+    }
+
+
+    .banner .content h1 {
+        font-size: 20px;
+        color: Aliceblue;
+    }
+
+    .banner .content h1 .name {
+        font-size: 30px;
+
+    }
+
+    .banner .content h2 {
+        font-size: 15px;
+    }
+
+    .container .banner .content hr {
+        margin: auto;
+        margin-top: 5px;
+        max-width: 20em;
+    }
+
+    .banner .content .slogan {
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    /* BIO */
+
+    .bio .content {
+        margin: 20px;
+    }
+
+    .bio .content .text {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .bio .content h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .bio .content p {
+        font-size: 15px;
+        line-height: 30px;
+    
+    }
+    
+    .bio .content h3 {
+        margin-top: 20px;
+        font-size: 15px;
+    
+    }
+
+    .bio .content img {
+        display: none;
+    }
+
+    /* Portfólio */
+    
+    .portfolio h2 {
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    .portfolio .content {
+        margin: 20px;
+        padding: 10px;
+        
+    }
+    
+    .portfolio .content .menu {
+        display: none;
+    }
+
+    
+    .portfolio .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: px;
+    }
+    
+    .portfolio .images .line {
+        display: flex;
+        flex-direction: column;
+        width: 32.2%;
+    }
+    
+    .portfolio .images .line img {
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    /* work */
+
+    .container .work .content {
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    
+    .work .cards {
+        padding: 1px;
+    }
+
+    .work .tittle {
+        text-align: center;
+    }
+    
+    .container .work h2 {
+        font-size: 30px;
+    }
+    
+    .container .work .content h3 {
+        margin: 10px;
+        font-size: 30px;
+    }
+    
+    .container .work .content h4 {
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    .container .work .content li {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .container .work .content p {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    /*Contacts*/
+
+    .contacts .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(24, 23, 23);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .contacts .content {
+        text-align: center;
+    }
+    
+    .contacts .content h3 {
+        margin: 20px;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .contacts .content .text h4 {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .contacts .content p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contacts a {
+        text-decoration: none;
+    }
+    
+    .contacts .content .menu {
+        margin-top: 20px;
+        margin-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .contacts .menu .text {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contacts .content .menu button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(43, 42, 42);
+        box-shadow: 1px 1px 1px 1px yellow;
+        color: white;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .contacts .content .menu button img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    
+    .contacts .content .menu h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .contacts .content .slogan {
+        font-family: 'PlayFair Dislay', serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    /* Whatsapp */
+    
+    .menu .whatsapp .zap-image {
+        padding: 3px;
+    }
+    
+    .menu .whatsapp a {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+    
+    /* Instagram */
+    
+    .menu .instagram .insta-image {
+        background-color: #FF007F;
+        padding: 3px;
+    }
+    
+    .menu .instagram a {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+    
+    /* Email */
+
+    .contacts .content .menu .email {
+        display: none;
+    }
+
+    /* footer */
+    .footer {
+        padding: 200px;
+    }
+}
