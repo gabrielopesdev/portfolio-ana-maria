@@ -90,6 +90,10 @@ body {
     object-fit: cover; 
 }
 
+.container .banner .mobile-video {
+    display: none;
+}
+
     /* Banner - Apresentção */
 
 .banner .content {
@@ -535,9 +539,21 @@ body {
     /* Banner */
 
     .container .banner {
+        height: 300px;
         height: 300px; 
     }
 
+    .container .banner .desktop-video {
+        display: none;
+    }
+
+    .container .banner .mobile-video {
+        display: block;
+        position: absolute;
+        object-fit: cover; 
+        width: 100%;
+        height: 100%;
+    }
 
     .banner .content h1 {
         font-size: 20px;
