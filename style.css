@@ -124,7 +124,7 @@ body {
 }
 
 .banner .content h1 .name {
-    font-size: 50px;
+    font-size: 70px;
     padding-left: 5px;
     color: rgb(102, 199, 255);
 }
@@ -556,22 +556,22 @@ body {
     }
 
     .banner .content h1 {
-        font-size: 20px;
+        font-size: 30px;
         color: Aliceblue;
     }
 
     .banner .content h1 .name {
-        font-size: 30px;
+        font-size: 40px;
 
     }
 
     .banner .content h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .container .banner .content hr {
         margin: auto;
-        margin-top: 5px;
+        margin-top: 10px;
         max-width: 20em;
     }
 
